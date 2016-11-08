@@ -1,7 +1,5 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
 * TypeScript setup and debugging demo (using Electron, Express and React)
@@ -25,4 +23,4 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Who do I talk to? ###
 
-* @tudor-goia 
+* @tudor-goia
