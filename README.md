@@ -17,7 +17,7 @@
 * run / debug the project's main process from VSCode's 'Launch' configuration
 * run / debug the project's render process from Electron's built-in Chrome-DevTools
 
-### Contribution guidelines ###
+### How can I contribute ###
 
 * Writing tests
 * Code review
