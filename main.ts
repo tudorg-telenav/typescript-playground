@@ -13,5 +13,3 @@ app.on('ready', () => {
 var server = new Server();
 
 server.start();
-
-// TODO: nu am stiut ca trebuie rulat task.json manual si deci am tot iesit si reintrat in VSCode... e posibil ca typeingurile de electron sa nu trebuiasca
