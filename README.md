@@ -12,8 +12,9 @@
 * install [nodeJS](https://nodejs.org/en/)
 * run "npm install"
 * open project in VSCode
-* debug the project's main process from VSCode's 'Launch' configuration
-* debug the project's render process from Electron's built-in Chrome-DevTools
+* CTRL + SHIFT + B to run the tasks.json Gulp setup (that transpiles .ts to .js
+* run / debug the project's main process from VSCode's 'Launch' configuration
+* run / debug the project's render process from Electron's built-in Chrome-DevTools
 
 ### Contribution guidelines ###
 
