@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "target": "es6",
+        "jsx": "react"
+    },
+    "files": [
+        "main.ts",
+        "server.ts",
+        "app.tsx"
+    ]
+}
