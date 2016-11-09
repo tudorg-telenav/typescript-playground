@@ -17,7 +17,7 @@ export class Server {
 
     public start(): Server {
         this.context.listen(3123, () => {
-            console.log('Electron`s main process is listening on port 3000!');
+            console.log('Electron`s main process is listening on port 3123!');
         });
         return this;
     }
