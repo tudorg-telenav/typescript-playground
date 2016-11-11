@@ -11,7 +11,6 @@
 * install [VScode](http://code.visualstudio.com/)
 * install [nodeJS](https://nodejs.org/en/)
 * run "npm install"
-* install tsc globally with: "npm install -g typescript"
 * open project in VSCode
 * CTRL + SHIFT + B to run the tasks.json Gulp setup (that transpiles .ts to .js
 * run / debug the project's main process from VSCode's 'Launch' configuration
