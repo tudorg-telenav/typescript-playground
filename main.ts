@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron');
+import {app, BrowserWindow} from 'electron';
 
 import {Server} from './server';
 
@@ -10,6 +10,6 @@ app.on('ready', () => {
     mainWindow.loadURL('file://' + __dirname + '/index.html');
 });
 
-var server = new Server();
+var server: Server = new Server();
 
 server.start();

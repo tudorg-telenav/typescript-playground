@@ -2,21 +2,21 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-const fs = require('fs');
+import * as fs from 'fs';
 
 navigator.mediaDevices.getUserMedia({
         video: true,
         audio: false
     }).then((videoStream) => {
-        var camera =  document.getElementById('camera') as HTMLImageElement;
+        let camera: HTMLImageElement =  document.getElementById('camera') as HTMLImageElement;
         camera.src = URL.createObjectURL(videoStream);
     });
 
 window.onload = function() {
 
-    var file = fs.readFile('tsconfig.json', {encoding: 'utf8'}, (err: any, buffer: any) => {
+    fs.readFile('tsconfig.json', {encoding: 'utf8'}, (err: NodeJS.ErrnoException, buffer: string) => {
 
-        let fileContent = JSON.parse(buffer);
+        let fileContent: JSON = JSON.parse(buffer);
         ReactDOM.render(
             <pre>{JSON.stringify(fileContent, null, 4)}</pre>,
             document.getElementById('hello')

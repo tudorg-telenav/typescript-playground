@@ -10,7 +10,7 @@ export class Server {
     }
 
     private addRoutes() {
-        this.context.get('/', (req: any, res: any) => {
+        this.context.get('/', (req: express.Request, res: express.Response) => {
             res.send('Hello World!');
         });
     }
