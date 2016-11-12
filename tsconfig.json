@@ -11,6 +11,7 @@
     "files": [
         "main.ts",
         "server.ts",
-        "app.tsx"
+        "app.tsx",
+        "pane_components/Layout.tsx"
     ]
 }

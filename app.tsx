@@ -1,6 +1,7 @@
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+
+import Layout from "./pane_components/Layout"
 
 // import * as fs from 'fs';
 
@@ -24,17 +25,5 @@ import * as ReactDOM from 'react-dom';
 //     });
 // }
 
-interface LayoutProps {};
-interface LayoutState {};
-
-class Layout extends React.Component<LayoutProps, LayoutState> {
-    render() {
-        return (
-            <h1>It works...</h1>
-        );
-    }
-}
-
-const appElement = document.getElementById('app');
-
+const appElement: Element = document.getElementById('app');
 ReactDOM.render(<Layout/>, appElement);
