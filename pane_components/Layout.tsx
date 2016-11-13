@@ -1,12 +1,18 @@
 import * as React from 'react';
 
+import Header from "./Header";
+import Footer from "./Footer";
+
 interface LayoutProps {};
 interface LayoutState {};
 
 export default class Layout extends React.Component<LayoutProps, LayoutState> {
     render() {
         return (
-            <h1>It works...</h1>
+            <div>
+                <Header />
+                <Footer />
+            </div>
         );
     }
 }
