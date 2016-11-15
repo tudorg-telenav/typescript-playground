@@ -22,11 +22,13 @@ export default class Layout extends React.Component<LayoutProps, LayoutState> {
     }
 
     toggleFooter() {
+        let currentState: LayoutState = this.state;
         if (this.state.isFooterVisible) {
-            this.state.isFooterVisible = false;
+            currentState.isFooterVisible = false;
         } else {
-            this.state.isFooterVisible = true;
+            currentState.isFooterVisible = true;
         }
+        this.setState(currentState);
     }
 
     render() {
