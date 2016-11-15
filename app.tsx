@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 
 import Layout from "./pane_components/Layout"
 
-// import * as fs from 'fs';
+import * as fs from 'fs';
 
 // navigator.mediaDevices.getUserMedia({
 //         video: true,
@@ -13,17 +13,10 @@ import Layout from "./pane_components/Layout"
 //         camera.src = URL.createObjectURL(videoStream);
 //     });
 
-// window.onload = function() {
+fs.readFile('tsconfig.json', {encoding: 'utf8'}, (err: NodeJS.ErrnoException, buffer: string) => {
 
-//     fs.readFile('tsconfig.json', {encoding: 'utf8'}, (err: NodeJS.ErrnoException, buffer: string) => {
-
-//         let fileContent: JSON = JSON.parse(buffer);
-//         ReactDOM.render(
-//             <pre>{JSON.stringify(fileContent, null, 4)}</pre>,
-//             document.getElementById('app')
-//         );
-//     });
-// }
-
-const appElement: Element = document.getElementById('app');
-ReactDOM.render(<Layout/>, appElement);
+    let fileContent: JSON = JSON.parse(buffer);
+    
+    const appElement: Element = document.getElementById('app');
+    ReactDOM.render(<Layout fileContent={JSON.stringify(fileContent, null, 4)}/>, appElement);
+});

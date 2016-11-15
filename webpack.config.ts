@@ -5,6 +5,7 @@ module.exports = {
     context: __dirname,
     devtool: debug ? "inline-sourcemap" : null,
     entry: "./app.tsx",
+    target: 'atom',
     output: {
         path: __dirname,
         filename: "scripts.min.js"
