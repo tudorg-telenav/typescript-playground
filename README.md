@@ -11,13 +11,12 @@
 * install [VScode](http://code.visualstudio.com/)
 * install [nodeJS](https://nodejs.org/en/)
 * run "npm install"
-* open project in VSCode
-* CTRL + SHIFT + B to run the tasks.json Gulp setup (that transpiles .ts to .js)
-* run "npm install -g webpack"
+* run "npm install -g webpack" (NOTE: if you are on widnows, make sure, your NODE_PATH is set up in the environment variables)
 * also install the TypeScript loader for webpack "npm install ts-loader"
-* simply run "webpack" (NOTE: if you are on widnows, make sure, your NODE_PATH is set up in the environment variables)
+* open project in VSCode
+* CTRL + SHIFT + B to run the tasks.json - webpack configuration also running transpilation
 * run / debug the project's main process from VSCode's 'Launch' configuration
-* run / debug the project's render process from Electron's built-in Chrome-DevTools
+* run / debug the project's render process from Electron's built-in Chrome-DevTools (webpack script category)
 
 ### How can I contribute? ###
 
