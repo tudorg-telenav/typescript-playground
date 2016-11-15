@@ -19,7 +19,7 @@ export default class Layout extends React.Component<LayoutProps, LayoutState> {
         this.state = {
             isHeaderVisible: true,
             isFooterVisible: true,
-            title: 'Test App'
+            title: 'header content goes here'
         };
     }
 

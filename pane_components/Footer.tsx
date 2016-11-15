@@ -6,7 +6,7 @@ interface FooterState {};
 export default class Header extends React.Component<FooterProps, FooterState> {
     render() {
         return (
-            <h1>Footer</h1>
+            <h1>footer content goes here</h1>
         );
     }
 }
