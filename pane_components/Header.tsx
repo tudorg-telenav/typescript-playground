@@ -15,7 +15,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
     render() {
         return (
             <div>
-                <span>{this.props.title}</span>
+                <h1>{this.props.title}</h1>
                 <button onClick={this.handleToggleClick.bind(this)}>Toggle</button>
             </div>
         );
