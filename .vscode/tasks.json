@@ -33,7 +33,7 @@
 			"taskName": "tsc",
 			"suppressTaskName": true,
 			"isBuildCommand": true,
-			"args": ["tsc -p ."]
+			"args": ["${workspaceRoot}/node_modules/.bin/tsc -p ."]
         }
     ]
 }
