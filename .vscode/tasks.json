@@ -1,26 +1,39 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "0.1.0",
-	"command": "webpack",
-	"isShellCommand": true,
-	"args": [],
-	"showOutput": "always",
-	"problemMatcher": {
-		"owner": "webpack",
-		"severity": "error",
-		"fileLocation": "relative",
-		"pattern": [
-			{
-				"regexp": "ERROR in (.*)",
-				"file" : 1
-			},
-			{
-				"regexp": "\\((\\d+),(\\d+)\\):(.*)",
-				"line":1,
-				"column": 2,
-				"message": 3
-			}			
-		]
-	}
+    "command": "cmd", 
+    "isShellCommand": true,
+    "showOutput": "always",
+    "args": ["/C"],
+
+    "tasks": [
+        {
+			"taskName": "webpack",
+			"suppressTaskName": true,
+			"isBuildCommand": true,
+			"args": ["${workspaceRoot}/node_modules/.bin/webpack"],
+			"problemMatcher": {
+				"owner": "webpack",
+				"severity": "error",
+				"fileLocation": "relative",
+				"pattern": [
+					{
+						"regexp": "ERROR in (.*)",
+						"file" : 1
+					},
+					{
+						"regexp": "\\((\\d+),(\\d+)\\):(.*)",
+						"line":1,
+						"column": 2,
+						"message": 3
+					}			
+				]
+			}
+        },
+		{
+			"taskName": "tsc",
+			"suppressTaskName": true,
+			"isBuildCommand": true,
+			"args": ["tsc -p ."]
+        }
+    ]
 }

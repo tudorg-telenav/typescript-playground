@@ -11,10 +11,15 @@
 * install [VScode](http://code.visualstudio.com/)
 * install [nodeJS](https://nodejs.org/en/)
 * run "npm install"
-* run "npm install -g webpack" (NOTE: if you are on widnows, make sure, your NODE_PATH is set up in the environment variables)
-* also install the TypeScript loader for webpack "npm install ts-loader"
 * open project in VSCode
-* CTRL + SHIFT + B to run the tasks.json - webpack configuration also running transpilation
+* define a custom keybinding in vscode:
+```JSON
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.runTask"
+    }
+```
+* CTRL + SHIFT + B twice to run both tasks defined in tasks.json - webpack configuration is also running transpilation
 * run / debug the project's main process from VSCode's 'Launch' configuration
 * run / debug the project's render process from Electron's built-in Chrome-DevTools (webpack script category)
 
