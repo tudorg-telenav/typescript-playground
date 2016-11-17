@@ -9,12 +9,7 @@
         "jsx": "react"
     },
     "files": [
-        "webpack.config.ts",
         "main.ts",
-        "server.ts",
-        "app.tsx",
-        "pane_components/Layout.tsx",
-        "pane_components/Header.tsx",
-        "pane_components/Footer.tsx"
+        "server.ts"
     ]
 }
